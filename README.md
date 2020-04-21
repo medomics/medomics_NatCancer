@@ -3,21 +3,16 @@
 This repository provides the framework to reproduce the main learning experiments of the MEDomics manuscript submitted to <em>Nature Cancer</em> in April 2020. Improvements from contributors are expected over time and will be identified via specific commit checkpoints. The exact results produced by this framework may eventually slightly differ from the original ones found in our study over the different checkpoints. 
 
 ## Prerequisites
-* We use [Conda](https://docs.conda.io) as our package manager.
-* We require Python 3.7+
+
+Work in progress ...
 
 ## Installing
 
-```
-git clone git@github.com:medomics/medomics_NatCancer.git
-cd medomics_NatCancer
-conda env create -f medomics_NatCancer.yml
-conda activate medomics_NatCancer
-```
+Work in progress ...
 
 ## Using this repository
 
-This repository is subdivided into three main high-level experiments of our study:
+This repository is subdivided into three main high-level experiments:
 * Experiment1_KM: section used to reproduce the test experiments of current Figure 4 of the manuscript. 
 * Experiment2_ML: section used to reproduce the test experiments of current Figure 5 of the manuscript.
 * Experiment3_NLP: section used to reproduce the test experiments of current Figure 6 of the manuscript.
@@ -40,6 +35,7 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 Thanks to the following people who have contributed to this repository:
 
+* [Olivier Morin](https://github.com/OlivierMorinUCSF)
 * [Martin Vallières](https://github.com/mvallieres)
 * [Jorge Barrios](https://github.com/numeroj)
 * [Taman Upadhaya](https://github.com/TmnGitHub)
