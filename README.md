@@ -47,6 +47,7 @@ For any scientific inquiries about this repository, please contact <medomics.inf
 ## STATEMENT
 
  This file is part of <https://github.com/medomics>, a package providing research utility tools for developing precision medicine applications. 
+ 
  --> Copyright (C) 2020  MEDomics consortium
 
      This package is free software: you can redistribute it and/or modify
