@@ -37,8 +37,22 @@ Thanks to the following people who have contributed to this repository:
 
 * [Olivier Morin](https://github.com/OlivierMorinUCSF)
 * [Martin Vallières](https://github.com/mvallieres)
-* [Jorge Barrios](https://github.com/numeroj)
+* Steve Braunstein
+* [Jorge Barrios Ginart](https://github.com/numeroj)
 * [Taman Upadhaya](https://github.com/TmnGitHub)
+* [Henry Woodruff](https://github.com/hwoodruff)
+* [Alex Zwanenburg](https://github.com/alexzwanenburg)
+* [Avishek Chatterjee](https://github.com/avieinstein)
+* Javier Villanueva-Meyer
+* Gilmer Valdes
+* William Chen
+* Julian C. Hong
+* Sue S. Yom
+* Timothy Solberg
+* Steffen Lock
+* Jan Seuntjens
+* Catherine Park
+* Philippe Lambin 
 
 ## Contact
 
