@@ -1,6 +1,4 @@
-<img src="logo/LOGO_3D_WHITE_Background.png" width="150" align="right" align="top" >
-<br />
-<br />
+<img src="logo/LOGO_3D_WHITE_Background.png" width="100" align="right" align="top" >
 <br />
 
 # MEDomics - Nature Cancer Study
