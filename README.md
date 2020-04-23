@@ -13,6 +13,7 @@ Work in progress ...
 ## Using this repository
 
 This repository is subdivided into three main high-level experiments:
+* Description_BayArea : section used to illustrate the components of current Figure 3 of the manuscript.
 * Experiment1_KM: section used to reproduce the test experiments of current Figure 4 of the manuscript. 
 * Experiment2_ML: section used to reproduce the test experiments of current Figure 5 of the manuscript.
 * Experiment3_NLP: section used to reproduce the test experiments of current Figure 6 of the manuscript.
