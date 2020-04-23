@@ -1,3 +1,8 @@
+<img src="logo/LOGO_3D_WHITE_Background.png" width="150" align="right" align="top" >
+<br />
+<br />
+<br />
+
 # MEDomics - Nature Cancer Study
 
 This repository provides the framework to reproduce the main learning experiments of the MEDomics manuscript submitted to <em>Nature Cancer</em> in April 2020. Improvements from contributors are expected over time and will be identified via specific commit checkpoints. The exact results produced by this framework may eventually slightly differ from the original ones found in our study over the different checkpoints. 
