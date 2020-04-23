@@ -53,7 +53,9 @@ FOLDER:
 ################### ALGORITHMS ################
 
 Main_Train_Algorithms.R => Training code
+
 Main_Test_Algorithms.R => Testing code
+
 Main_Training_Testing_Class_Probability.R  => Obtaining class and probability of training and testing dataset from final model 
 
 Executing code
