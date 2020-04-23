@@ -18,7 +18,7 @@
      along with this package.  If not, see <http://www.gnu.org/licenses/>.
 
 -----------------------------------------------------------------------------------------------------------------------------
-################################## Automatic Omics based Machine Learning (Auto_OML) toolbox ################################
+######### Automatic Omics based Machine Learning (Auto_OML) toolbox ##########
 
 Author   : Taman Upadhaya <tamanupadhaya@gmail.com>
 #@version: 3.5, 17/12/2019
@@ -26,11 +26,12 @@ Author   : Taman Upadhaya <tamanupadhaya@gmail.com>
 Contributors: Olivier Morin, Martin Vallières, Jorge Barrios
 
 
-############################################### PREREQUISITES #################################################################
-------------------------------------------------------------------------------------------------------------------------------
+#################### PREREQUISITES ###################
+
 * Windows or MAC or Linux operating systems
 * R version (3.6.1) and above
----------------------------------------------------------- GENERAL INFORMATION ----------------------------------------------
+
+##################### GENERAL INFORMATION ############
 FOLDER:
        [1] Algorithms         => Contains 7 different algorithm (Random Forest, Support Vector machine, CART, LASSO, Univariate Coxph and multivariate Penalized Coxph)
                                  * Parameter tuning is done using gird seach tehnique for each algorithm using choosen cross validation method
@@ -48,8 +49,7 @@ FOLDER:
        [4] Evaluation_Figure  => It takes all the results from Results folder and plots the ROC, Barchart, importance scrore
 
 
-################################################### ALGORITHMS ###############################################################
-------------------------------------------------------------------------------------------------------------------------------
+################### ALGORITHMS ################
 Main_Train_Algorithms.R                    => Training code 
 Main_Test_Algorithms.R                     => Testing code  
 Main_Training_Testing_Class_Probability.R  => Obtaining class and probability of training and testing dataset from final model 
@@ -77,7 +77,7 @@ NOTE:
      [2] RF split and number of TREE (default 500) grid search bound can be change
      [3] There are various options that can be modified
 
-################################################ Evaluation_Figure ##########################################################
+################ Evaluation_Figure #############
 # It takes all the results from Results folder and plots the AUC, Barchart, feature importance scrore
 
 Executing code
@@ -87,7 +87,7 @@ command line: [1] cd to folder .../Auto_OML/Evaluation_Figure/
               [3] Graph (Cross-validation, Testing): ROC and AUC 
 
 
-################################################# CONDA INSTRUCTION ##########################################################
+############## CONDA INSTRUCTION ###########
 1.  conda create -n R_shared_env r-essentials r-base
 2.  conda activate R_shared_env
 3.  conda install -c r r-caret
@@ -101,7 +101,7 @@ command line: [1] cd to folder .../Auto_OML/Evaluation_Figure/
 11. conda install -c conda-forge parallel
 12. conda install -c conda-forge r-klar 
 
-################################################ ACKNOWLEDGEMENTS ############################################################
+############## ACKNOWLEDGEMENTS #############
 Package used: [1] caret
 	      [2] doMC
 	      [3] readr
