@@ -176,6 +176,7 @@ class CatStratifiedKFold:
 # ---------------------------------------------------------------------------
 # FUNCTION TO PRE-PROCESS NOTES
 # ---------------------------------------------------------------------------
+
 def combined_notes(disease, period=60, year_survival=5, days_sur_bounds=None,
                    authortype_list=None, idlist=None,
                    added_features_list=None):
