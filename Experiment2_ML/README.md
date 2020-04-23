@@ -33,14 +33,15 @@ Contributors: Olivier Morin, Martin Vallières, Jorge Barrios
 ##################### GENERAL INFORMATION ############
 
 FOLDER
-       [1] Algorithms         => Contains 7 different algorithm (Random Forest, Support Vector machine, CART, LASSO, Univariate Coxph and multivariate Penalized Coxph)
-                                 * Parameter tuning is done using gird seach tehnique for each algorithm using choosen cross validation method
+       [1] Algorithms         => Contains 7 different algorithm (Random Forest, Support Vector machine, CART, LASSO,
+                                 Univariate Coxph and multivariate Penalized Coxph)
+                                 * Parameter tuning is done using gird seach tehnique for each algorithm using choosen cross                                    validation method
 				 * refer inside the algorithm for details for parameter search bound
-                                 * For IMBALANCE CLASSIFICATION: SMOTE algorithm is automatically used to balance data in training 
+                                 * For IMBALANCE CLASSIFICATION: SMOTE algorithm is automatically used to balance data in                                      training 
  
        [2] Dataset            => Conatains folder for training and testing dataset 
-				 * (dataset with name "Training_Dataset.csv" and "Testing_Dataset.csv" must be there for Random Forest, Support Vector machine, CART, 
-                                   LASSO algorithm to execute and "Training_Dataset_COX.csv" and "Testing_Dataset_COX.csv" must be there for Univariate Coxph and 
+				 * (dataset with name "Training_Dataset.csv" and "Testing_Dataset.csv" must be there for                                        Random Forest, Support Vector machine, CART, 
+                                   LASSO algorithm to execute and "Training_Dataset_COX.csv" and "Testing_Dataset_COX.csv"                                      must be there for Univariate Coxph and 
                                    "Training_Dataset_multi_COX.csv" and "Testing_Dataset_multi_COX.csv" multivariate Penalized Coxph)
 				 * || Training data should be balanced i.e equal number of patients in both class||
 				 * Always first row should be patients ID and last row should be class.
@@ -53,7 +54,7 @@ FOLDER
 
 Main_Train_Algorithms.R                    => Training code 
 Main_Test_Algorithms.R                     => Testing code  
-Main_Training_Testing_Class_Probability.R  => Obtaining class and probability of training and testing dataset from final model 
+Main_Training_Testing_Class_Probability.R  => Obtaining class and probability of training and testing dataset from final                                                   model 
 
 Executing code
 Load the script and simply run in Rstudio 
