@@ -47,21 +47,22 @@ FOLDER:
 [3] Results: contains result from the all algorithms inside algorithm named floder
 * refer below for more info
 
-[4] Evaluation_Figure  => It takes all the results from Results folder and plots the ROC, Barchart, importance scrore
+[4] Evaluation_Figure: tt takes all the results from Results folder and plots the ROC, Barchart, importance scrore
 
 
 ################### ALGORITHMS ################
 
-Main_Train_Algorithms.R                    => Training code 
+Main_Train_Algorithms.R => Training code
 Main_Test_Algorithms.R                     => Testing code  
-Main_Training_Testing_Class_Probability.R  => Obtaining class and probability of training and testing dataset from final                                                   model 
+Main_Training_Testing_Class_Probability.R  => Obtaining class and probability of training and testing dataset from final model 
 
 Executing code
 Load the script and simply run in Rstudio 
-Command line  [1] cd to folder .../Auto_OML/Algorithms
-	      [2] Rscript Main_Train_Algorithms.R                    # For training
-	      [3] Rscript Main_Test_Algorithms.R                     # For testing
-	      [4] Rscript Main_Training_Testing_Class_Probability.R  # For class and probability
+Command line:  
+[1] cd to folder .../Auto_OML/Algorithms
+[2] Rscript Main_Train_Algorithms.R                    # For training
+[3] Rscript Main_Test_Algorithms.R                     # For testing
+[4] Rscript Main_Training_Testing_Class_Probability.R  # For class and probability
 
 
 Results
@@ -69,15 +70,16 @@ All the results for all algorithm will be written on folder Results inside used 
 
 For e.g if you use Random Forest algorithm the results will be writtern inside Results/Random_Forest/
 
-Results files  [1] Random_Forest_Training_Results.csv        # Contains development and cross-validation results
-	       [2] Random_Forest_Testing_Results.csv         # Contains testing results
-               [3] Random_Forest_Train_class_probability.csv # Contains training dataset probability and class
-	       [4] Random_Forest_Test_class_probability.csv  # Contains testing dataset probability and class
+Results files  
+[1] Random_Forest_Training_Results.csv        # Contains development and cross-validation results
+[2] Random_Forest_Testing_Results.csv         # Contains testing results
+[3] Random_Forest_Train_class_probability.csv # Contains training dataset probability and class
+[4] Random_Forest_Test_class_probability.csv  # Contains testing dataset probability and class
+
 NOTE
-     [1] There are various cross validation method
-         LOOCV (default), 5/10-fold, 5/10-repated 5/10 cross-validation
-     [2] RF split and number of TREE (default 500) grid search bound can be change
-     [3] There are various options that can be modified
+[1] There are various cross validation method: LOOCV (default), 5/10-fold, 5/10-repated 5/10 cross-validation
+[2] RF split and number of TREE (default 500) grid search bound can be change
+[3] There are various options that can be modified
 
 ################ Evaluation_Figure #############
 
@@ -85,9 +87,10 @@ It takes all the results from Results folder and plots the AUC, Barchart, featur
 
 Executing code
 Load the script simply run line by line in Rstudio 
-command line  [1] cd to folder .../Auto_OML/Evaluation_Figure/
-              [2] Rscript Evaluation_Figure.R # Graph will be save in the same folder
-              [3] Graph (Cross-validation, Testing): ROC and AUC 
+command line  
+[1] cd to folder .../Auto_OML/Evaluation_Figure/
+[2] Rscript Evaluation_Figure.R # Graph will be save in the same folder
+[3] Graph (Cross-validation, Testing): ROC and AUC 
 
 
 ############## CONDA INSTRUCTION ###########
