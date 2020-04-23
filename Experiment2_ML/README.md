@@ -112,15 +112,17 @@ command line
 
 ############## ACKNOWLEDGEMENTS #############
 
-Package used: 1. caret
-	      2. doMC
-	      3. readr
-	      4. pROC
-	      5. SMOTE
-	      6. survival
-	      7. dplyr
-	      8. survminer
-              9. hdnom https://cran.r-project.org/web/packages/hdnom/vignettes/hdnom.html#1_introduction
+Package used: 
+1. caret
+2. doMC
+3. readr
+4. pROC
+5. SMOTE
+6. survival
+7. dplyr
+8. survminer
+9. hdnom https://cran.r-project.org/web/packages/hdnom/vignettes/hdnom.html#1_introduction
+
 *The code should automatically install all the required package otherwise do it manually
 
 ----------------------------------------------------------------------------------------------------------------------------
