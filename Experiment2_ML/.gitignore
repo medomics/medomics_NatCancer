@@ -1,0 +1,4 @@
+.Rhistory
+*.Rhistory
+*.~lock
+.~lock
