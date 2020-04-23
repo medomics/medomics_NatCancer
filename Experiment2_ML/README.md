@@ -17,7 +17,7 @@
      You should have received a copy of the GNU General Public License
      along with this package.  If not, see <http://www.gnu.org/licenses/>.
 
------------------------------------------------------------------------------------------------------------------------------
+
 ######### Automatic Omics based Machine Learning (Auto_OML) toolbox ##########
 
 Author   : Taman Upadhaya <tamanupadhaya@gmail.com>
@@ -118,3 +118,4 @@ Package used: [1] caret
               [9] hdnom https://cran.r-project.org/web/packages/hdnom/vignettes/hdnom.html#1_introduction
 *The code should automatically install all the required package otherwise do it manually
 
+----------------------------------------------------------------------------------------------------------------------------
