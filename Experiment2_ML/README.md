@@ -21,6 +21,7 @@
 ######### Automatic Omics based Machine Learning (Auto_OML) toolbox ##########
 
 Author : Taman Upadhaya <tamanupadhaya@gmail.com>
+
 Date.  : 17/12/2019
 
 Contributors: Olivier Morin, Martin Vallières, Jorge Barrios
