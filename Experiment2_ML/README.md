@@ -21,7 +21,7 @@
 ######### Automatic Omics based Machine Learning (Auto_OML) toolbox ##########
 
 Author   : Taman Upadhaya <tamanupadhaya@gmail.com>
-#@version: 3.5, 17/12/2019
+@date: 3.5, 17/12/2019
 
 Contributors: Olivier Morin, Martin Vallières, Jorge Barrios
 
@@ -32,6 +32,7 @@ Contributors: Olivier Morin, Martin Vallières, Jorge Barrios
 * R version (3.6.1) and above
 
 ##################### GENERAL INFORMATION ############
+
 FOLDER:
        [1] Algorithms         => Contains 7 different algorithm (Random Forest, Support Vector machine, CART, LASSO, Univariate Coxph and multivariate Penalized Coxph)
                                  * Parameter tuning is done using gird seach tehnique for each algorithm using choosen cross validation method
@@ -42,7 +43,7 @@ FOLDER:
 				 * (dataset with name "Training_Dataset.csv" and "Testing_Dataset.csv" must be there for Random Forest, Support Vector machine, CART, 
                                    LASSO algorithm to execute and "Training_Dataset_COX.csv" and "Testing_Dataset_COX.csv" must be there for Univariate Coxph and 
                                    "Training_Dataset_multi_COX.csv" and "Testing_Dataset_multi_COX.csv" multivariate Penalized Coxph)
-				 * ||~~~~ Training data should be balanced i.e equal number of patients in both class~~~~||
+				 * || Training data should be balanced i.e equal number of patients in both class||
 				 * Always first row should be patients ID and last row should be class.
        [3] Results            => Contains result from the all algorithms inside algorithm named floder
 				 * refer below for more info
@@ -50,6 +51,7 @@ FOLDER:
 
 
 ################### ALGORITHMS ################
+
 Main_Train_Algorithms.R                    => Training code 
 Main_Test_Algorithms.R                     => Testing code  
 Main_Training_Testing_Class_Probability.R  => Obtaining class and probability of training and testing dataset from final model 
@@ -78,7 +80,8 @@ NOTE:
      [3] There are various options that can be modified
 
 ################ Evaluation_Figure #############
-# It takes all the results from Results folder and plots the AUC, Barchart, feature importance scrore
+
+It takes all the results from Results folder and plots the AUC, Barchart, feature importance scrore
 
 Executing code
 Rstudio: load the script simply run line by line
@@ -88,6 +91,7 @@ command line: [1] cd to folder .../Auto_OML/Evaluation_Figure/
 
 
 ############## CONDA INSTRUCTION ###########
+
 1.  conda create -n R_shared_env r-essentials r-base
 2.  conda activate R_shared_env
 3.  conda install -c r r-caret
@@ -102,6 +106,7 @@ command line: [1] cd to folder .../Auto_OML/Evaluation_Figure/
 12. conda install -c conda-forge r-klar 
 
 ############## ACKNOWLEDGEMENTS #############
+
 Package used: [1] caret
 	      [2] doMC
 	      [3] readr
