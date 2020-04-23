@@ -21,10 +21,9 @@
 ######### Automatic Omics based Machine Learning (Auto_OML) toolbox ##########
 
 Author   : Taman Upadhaya <tamanupadhaya@gmail.com>
-@date: 3.5, 17/12/2019
+Date: 3.5, 17/12/2019
 
 Contributors: Olivier Morin, Martin Vallières, Jorge Barrios
-
 
 #################### PREREQUISITES ###################
 
@@ -33,7 +32,7 @@ Contributors: Olivier Morin, Martin Vallières, Jorge Barrios
 
 ##################### GENERAL INFORMATION ############
 
-FOLDER:
+FOLDER
        [1] Algorithms         => Contains 7 different algorithm (Random Forest, Support Vector machine, CART, LASSO, Univariate Coxph and multivariate Penalized Coxph)
                                  * Parameter tuning is done using gird seach tehnique for each algorithm using choosen cross validation method
 				 * refer inside the algorithm for details for parameter search bound
@@ -57,8 +56,8 @@ Main_Test_Algorithms.R                     => Testing code
 Main_Training_Testing_Class_Probability.R  => Obtaining class and probability of training and testing dataset from final model 
 
 Executing code
-Rstudio: load the script and simply run
-Command line: [1] cd to folder .../Auto_OML/Algorithms
+Load the script and simply run in Rstudio 
+Command line  [1] cd to folder .../Auto_OML/Algorithms
 	      [2] Rscript Main_Train_Algorithms.R                    # For training
 	      [3] Rscript Main_Test_Algorithms.R                     # For testing
 	      [4] Rscript Main_Training_Testing_Class_Probability.R  # For class and probability
@@ -69,11 +68,11 @@ All the results for all algorithm will be written on folder Results inside used 
 
 For e.g if you use Random Forest algorithm the results will be writtern inside Results/Random_Forest/
 
-Results files: [1] Random_Forest_Training_Results.csv        # Contains development and cross-validation results
+Results files  [1] Random_Forest_Training_Results.csv        # Contains development and cross-validation results
 	       [2] Random_Forest_Testing_Results.csv         # Contains testing results
                [3] Random_Forest_Train_class_probability.csv # Contains training dataset probability and class
 	       [4] Random_Forest_Test_class_probability.csv  # Contains testing dataset probability and class
-NOTE:
+NOTE
      [1] There are various cross validation method
          LOOCV (default), 5/10-fold, 5/10-repated 5/10 cross-validation
      [2] RF split and number of TREE (default 500) grid search bound can be change
@@ -84,8 +83,8 @@ NOTE:
 It takes all the results from Results folder and plots the AUC, Barchart, feature importance scrore
 
 Executing code
-Rstudio: load the script simply run line by line
-command line: [1] cd to folder .../Auto_OML/Evaluation_Figure/
+Load the script simply run line by line in Rstudio 
+command line  [1] cd to folder .../Auto_OML/Evaluation_Figure/
               [2] Rscript Evaluation_Figure.R # Graph will be save in the same folder
               [3] Graph (Cross-validation, Testing): ROC and AUC 
 
