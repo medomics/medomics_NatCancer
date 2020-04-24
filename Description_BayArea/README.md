@@ -9,7 +9,7 @@ This section is used to reproduce the graphics inserted in Figure 3 of the manus
 
 ## Instructions
 
-Run the Jupyter Notebook ```Regional_Oncology_Exploration-Figure4.ipynb``` to obtain the graphical results.
+Run the Jupyter Notebook ```Regional_Oncology_Exploration-Figure3.ipynb``` to obtain the graphical results.
 
 ## Contributors
 
