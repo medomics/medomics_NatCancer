@@ -13,6 +13,7 @@ Work in progress ...
 ## Using this repository
 
 This repository is subdivided into three main high-level experiments:
+* Description_BayArea : section used to illustrate the components of current Figure 3 of the manuscript.
 * Experiment1_KM: section used to reproduce the test experiments of current Figure 4 of the manuscript. 
 * Experiment2_ML: section used to reproduce the test experiments of current Figure 5 of the manuscript.
 * Experiment3_NLP: section used to reproduce the test experiments of current Figure 6 of the manuscript.
@@ -37,8 +38,22 @@ Thanks to the following people who have contributed to this repository:
 
 * [Olivier Morin](https://github.com/OlivierMorinUCSF)
 * [Martin Vallières](https://github.com/mvallieres)
-* [Jorge Barrios](https://github.com/numeroj)
+* Steve Braunstein
+* [Jorge Barrios Ginart](https://github.com/numeroj)
 * [Taman Upadhaya](https://github.com/TmnGitHub)
+* [Henry Woodruff](https://github.com/hwoodruff)
+* [Alex Zwanenburg](https://github.com/alexzwanenburg)
+* [Avishek Chatterjee](https://github.com/avieinstein)
+* Javier Villanueva-Meyer
+* Gilmer Valdes
+* William Chen
+* Julian C. Hong
+* Sue S. Yom
+* Timothy Solberg
+* Steffen Lock
+* Jan Seuntjens
+* Catherine Park
+* Philippe Lambin 
 
 ## Contact
 

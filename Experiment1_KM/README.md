@@ -1,4 +1,4 @@
-# Experiment1_KM
+# Experiment 1 - Kaplan-Meier plots
 
 This section is used to reproduce the test experiments of current Figure 4 of the manuscript.
 
