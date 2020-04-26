@@ -5,10 +5,6 @@
 
 This repository provides the framework to reproduce the main learning experiments of the MEDomics manuscript submitted to <em>Nature Cancer</em> in April 2020. Improvements from contributors are expected over time and will be identified via specific commit checkpoints. The exact results produced by this framework may eventually slightly differ from the original ones found in our study over the different checkpoints. 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 ## Using this repository
 
 This repository is subdivided into three main high-level experiments:
@@ -27,7 +23,7 @@ We would love to receive feedback to improve the learning experiments of this re
 2. Create a branch: `git checkout -b <branch_name>`.
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
 4. Push to the original branch: `git push origin <project_name>/<location>`
-5. Create the pull request.
+5. Create the pull request
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
