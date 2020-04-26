@@ -1,4 +1,4 @@
-# Experiment3_NLP
+# Experiment 3 - Natural language processing
 
 This section is used to reproduce the test experiments of current Figure 6 of the manuscript.
 
@@ -6,9 +6,6 @@ This section is used to reproduce the test experiments of current Figure 6 of th
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
 * Python 3.7.4 and above.
 
-## Installing
-
-Work in progress. A dedicated conda environment file will be provided.
 
 ## Instructions
 

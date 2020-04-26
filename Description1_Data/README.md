@@ -1,15 +1,14 @@
-# Experiment 1 - Kaplan-Meier plots
+# Description - Distributions and Patient Selection
 
-This section is used to reproduce the test experiments of current Figure 4 of the manuscript.
+This section is used to illustrate the components of current Figure 2 of the manuscript.
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
 * Python 3.7.4 and above.
 
-
 ## Instructions
 
-Run the Jupyter Notebook ```Kaplan-Meier-Figure4.ipynb``` to obtain the graphical results.
+Run the Jupyter Notebook ```Entries_Distribution_and_Patient_Selection-Figure2.ipynb``` to obtain the graphical results.
 
 ## Contributors
 
@@ -38,3 +37,4 @@ Thanks to the following people who have contributed to this section:
  
      You should have received a copy of the GNU General Public License
      along with this package.  If not, see <http://www.gnu.org/licenses/>.
+     

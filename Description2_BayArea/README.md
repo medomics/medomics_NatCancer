@@ -1,15 +1,14 @@
-# Experiment 1 - Kaplan-Meier plots
+# Description - Patterns of care in the Bay Area
 
-This section is used to reproduce the test experiments of current Figure 4 of the manuscript.
+This section is used to to illustrate the components of current Figure 3 of the manuscript.
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
 * Python 3.7.4 and above.
 
-
 ## Instructions
 
-Run the Jupyter Notebook ```Kaplan-Meier-Figure4.ipynb``` to obtain the graphical results.
+Run the Jupyter Notebook ```Regional_Oncology_Exploration-Figure3.ipynb``` to obtain the graphical results.
 
 ## Contributors
 
