@@ -1,11 +1,10 @@
-# Description_BayArea
+# Description - Patterns of care in the Bay Area
 
-This section is used to reproduce the graphics inserted in Figure 3 of the manuscript.
+This section is used to to illustrate the components of current Figure 3 of the manuscript.
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
 * Python 3.7.4 and above.
-
 
 ## Instructions
 

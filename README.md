@@ -8,7 +8,7 @@ This repository provides the framework to reproduce the main learning experiment
 ## Using this repository
 
 This repository is subdivided into three main high-level experiments:
-* Description_BayArea : section used to illustrate the components of current Figure 3 of the manuscript.
+* Description_BayArea: section used to illustrate the components of current Figure 3 of the manuscript.
 * Experiment1_KM: section used to reproduce the test experiments of current Figure 4 of the manuscript. 
 * Experiment2_ML: section used to reproduce the test experiments of current Figure 5 of the manuscript.
 * Experiment3_NLP: section used to reproduce the test experiments of current Figure 6 of the manuscript.
@@ -23,7 +23,7 @@ We would love to receive feedback to improve the learning experiments of this re
 2. Create a branch: `git checkout -b <branch_name>`.
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
 4. Push to the original branch: `git push origin <project_name>/<location>`
-5. Create the pull request
+5. Create the pull request.
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
