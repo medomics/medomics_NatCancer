@@ -1,3 +1,15 @@
+#__________________________________________________________________________________________________________________________________________________________________________________________
+#  INSTALLING THE PACKAGES IF NOT INSTALLED
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+packages <- c("survminer","survival","readr","pROC")
+if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
+  install.packages(setdiff(packages, rownames(installed.packages())))  
+  install.packages("caret", dependencies = c("Depends", "Suggests"))
+}
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#__________________________________________________________________________________________________________________________________________________________________________________________
+
+
 library("survminer")
 library("readr")
 require("survival")
@@ -6,7 +18,7 @@ library(pROC)
 # Figure 5 Kaplan-Meier curve plot
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # Read dataframe for Kaplan-Meier plot 
-dat=read.csv("Testing_Dataset_Probability.csv",header=TRUE)
+dat=read.csv("./Data/Testing_Dataset_Probability.csv",header=TRUE)
 
 dat$Probability_Class_1<-round(dat$Probability_Class_1,digits=2)
 
@@ -41,7 +53,7 @@ ggsurvplot(fit, data = dat, size = 1,  palette =c("green","blue", "black", "red"
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # Figure 5 ROC curve plot
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-Groundtruth_Results_Test = read_csv('ROC.csv')
+Groundtruth_Results_Test = read_csv('./Data/ROC.csv')
 
 pROC_obj_SVM <- roc(Groundtruth_Results_Test$CLASS,Groundtruth_Results_Test$SVM,
                     # arguments for ci
