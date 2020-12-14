@@ -1,14 +1,27 @@
-# Description - Patterns of care in the Bay Area
+# Figure 3
 
-This section is used to to illustrate the components of current Figure 3 of the manuscript.
+This section is used to reproduce the graphics inserted in Figure 3 of the manuscript.
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
 * Python 3.7.4 and above.
 
+## Installing
+
+List of commands to install the required packages using conda:
+
+* conda install seaborn=0.11.0
+* conda install -c anaconda ipykernel
+* conda install -c conda-forge lifelines
+* conda install -c anaconda scikit-learn
+* conda install -c conda-forge matplotlib
+
+
 ## Instructions
 
-Run the Jupyter Notebook ```Regional_Oncology_Exploration-Figure3.ipynb``` to obtain the graphical results.
+1. Create a folder with the name 'Data' in the same directory where this file is located.
+2. Download all files from the "Figures/Figure_3" folder of our [OSF project](https://osf.io/ytge5/). Place them in the 'Data' folder.The collection of CSV files contains the data for obtain the graphical results with the Jupyter Notebook ```Regional_Oncology_Exploration-Figure3.ipynb```.
+3. Run the Jupyter Notebook ```Regional_Oncology_Exploration-Figure3.ipynb``` to obtain the graphical results.
 
 ## Contributors
 

@@ -6,7 +6,7 @@ This script is used to reproduce the NLP experiments of the following paper:
 "MEDomics: Towards Self-Cognizant Hospitals in the Treatment of Cancer"
 
 Results are saved in a pickle object with the following name:
-  --> {disease}{starting point}.pickle  (Ex: breast20.pickle),
+  --> {disease}{starting point}.pickle  (Ex: breast30.pickle),
 where "disease" is one of the options below (breast, prostate, lung or glioma)
 and "starting point" is one of the options below (20, 30 or 60) days.
 
@@ -38,12 +38,7 @@ The dataframe must have the following mandatory columns:
   --> 'stage_grade': Stage or grade.
 
 The dataframe may contain additional columns, for example:
-  --> 'dob': Day of birth.
-  --> 'ageatdx': Age.
-  --> 'sex': Sex.
-  --> 'race': Race.
-  --> 'bmi_group': Group according to body mass index.
-  --> 'smoker': Smoker status (True or False).
+  --> 'AGE': Age at diagnosis.
 
 If present, these columns will also be saved in the output file 
 {disease}{starting point}.pickle
@@ -94,7 +89,7 @@ from survivalnlp import lr_cv
 #                   1 --> prostate
 #                   2 --> lung
 #                   3 --> glioma
-cancer_type_index = 3 # ASSIGN THE CHOSEN VALUE FOR OPTION 1 HERE
+cancer_type_index = 0 # ASSIGN THE CHOSEN VALUE FOR OPTION 1 HERE
 
 # OPTION 2: Used to set the start index of the time series for the 
 #           experiment.
@@ -103,7 +98,7 @@ cancer_type_index = 3 # ASSIGN THE CHOSEN VALUE FOR OPTION 1 HERE
 #                   0 --> 20 days
 #                   1 --> 30 days
 #                   2 --> 60 days
-start_index = 0 # ASSIGN THE CHOSEN VALUE FOR OPTION 2 HERE 
+start_index = 1 # ASSIGN THE CHOSEN VALUE FOR OPTION 2 HERE 
 # ---------------------------------------------------------------------------
 
 
@@ -114,6 +109,7 @@ start_index = 0 # ASSIGN THE CHOSEN VALUE FOR OPTION 2 HERE
 # List of cancer types and time points
 cancer_type = ['breast', 'prostate', 'lung', 'glioma']
 period_points = [20, 30, 60, 120, 180, 240, 300, 365]
+
 if start_index == 0:
     period_points = period_points[:1] + period_points[2:]
 else:
@@ -136,13 +132,8 @@ authortype_list = ['Physician',
                    'Pathology-Impression']
 
 # List of additional columns
-added_features_list = ['dob',
-                       'ageatdx',
-                       'sex',
-                       'race',
-                       'bmi_group',
-                       'smoker'] 
-results_list = []
+added_features_list = ['AGE'] 
+
 # ---------------------------------------------------------------------------
 
 
@@ -152,6 +143,7 @@ results_list = []
 start = time.time()
 
 # NLP calculations
+results_list = []
 for random_state_value in random_state_list:
     results_list.append(lr_cv(cancer_type[cancer_type_index],
                               year_survival=cancer_year_survival,
@@ -170,3 +162,4 @@ print('Execution Time: ', time.time() - start)
 # ---------------------------------------------------------------------------
 
 # ***************************************************************************
+# Execution Time:  about 18 hours

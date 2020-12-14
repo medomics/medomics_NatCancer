@@ -1,14 +1,27 @@
-# Description - Distributions and Patient Selection
+# Figure 2
 
-This section is used to illustrate the components of current Figure 2 of the manuscript.
+This section is used to reproduce the graphics inserted in Figure 2 of the manuscript.
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
 * Python 3.7.4 and above.
 
+## Installing
+
+List of commands to install the required packages using conda:
+
+* conda install seaborn=0.11.0
+* conda install -c anaconda ipykernel
+* conda install -c conda-forge lifelines
+* conda install -c anaconda scikit-learn
+* conda install -c conda-forge matplotlib
+
+
 ## Instructions
 
-Run the Jupyter Notebook ```Entries_Distribution_and_Patient_Selection-Figure2.ipynb``` to obtain the graphical results.
+1. Create a folder with the name 'Data' in the same directory where this file is located.
+2. Download all files from the "Figures/Figure_2" folder of our [OSF project](https://osf.io/ytge5/). Place them in the 'Data' folder. The collection of CSV files contains the data for obtain the graphical results with the Jupyter Notebook ```Entries_Distribution_and_Patient_Selection-Figure2.ipynb``` .
+3. Run the Jupyter Notebook ```Entries_Distribution_and_Patient_Selection-Figure2.ipynb``` to obtain the graphical results.
 
 ## Contributors
 
@@ -37,4 +50,3 @@ Thanks to the following people who have contributed to this section:
  
      You should have received a copy of the GNU General Public License
      along with this package.  If not, see <http://www.gnu.org/licenses/>.
-     

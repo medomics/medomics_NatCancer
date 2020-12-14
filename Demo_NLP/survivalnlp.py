@@ -3,7 +3,8 @@
 DESCRIPTION:
 
 Functions used to perform the NLP experiments of the following paper:
-"MEDomics: Towards Self-Cognizant Hospitals in the Treatment of Cancer"
+"MEDomics: Towards a Continuously Learning Health System for the Treatment
+of Cancer"
 -----------------------------------------------------------------------------
 AUTHORS: 
 
@@ -73,30 +74,49 @@ def nested_train_test_split(df, examples_col_names, labels_col_names,
     'labels_col_names' is a list of two values represent the category and label
     used in the nested stratification."""
 
+    df = pd.merge(df,
+                  df.groupby(labels_col_names).size().to_frame(name = 'count').reset_index(), 
+                  on=labels_col_names, 
+                  how='left')
+    
+    train_one_member = None
+    if 1 in df['count'].values:
+        train_one_member = df[df['count']==1].copy().reset_index(drop=True)
+        train_frac = (train_frac*len(df)-len(train_one_member))/(len(df)-len(train_one_member))
+        df = df[df['count']>1].copy().reset_index(drop=True)
+
+    # Dropping some columns 
+    df.drop(columns =["count"], inplace = True)
+    
     labels_list_0 = df[labels_col_names[0]].value_counts().index.tolist()
     train = None
     test = None
 
     for i in labels_list_0:
-        labels = df[df[labels_col_names[0]].astype(
-            str) == i][labels_col_names[1]].copy()
+        labels = df[df[labels_col_names[0]].astype(str) == i][labels_col_names[1]].copy()
         labels.reset_index(inplace=True, drop=True)
-        examples = df[df[labels_col_names[0]].astype(
-            str) == i][examples_col_names].copy()
+        examples = df[df[labels_col_names[0]].astype(str) == i][examples_col_names].copy()
         examples.reset_index(inplace=True, drop=True)
-        X_tr, X_te, y_tr, y_te = train_test_split(examples, labels,
+        
+        X_tr, X_te, y_tr, y_te = train_test_split(examples,
+                                                  labels,
                                                   train_size=train_frac,
                                                   stratify=labels,
                                                   random_state=random_state)
+        
         train_i = pd.concat([y_tr, X_tr], axis=1).reset_index(drop=True)
+        train_i = train_i.loc[:,~train_i.columns.duplicated()]
         test_i = pd.concat([y_te, X_te], axis=1).reset_index(drop=True)
+        test_i = test_i.loc[:,~test_i.columns.duplicated()]
         if train is None:
             train = train_i
             test = test_i
         else:
             train = pd.concat([train, train_i], axis=0, ignore_index=True)
             test = pd.concat([test, test_i], axis=0, ignore_index=True)
-
+    if  train_one_member is not None:       
+        train = pd.concat([train, train_one_member[train.columns]], axis=0, ignore_index=True)
+    
     return train, test
 
 
@@ -176,7 +196,6 @@ class CatStratifiedKFold:
 # ---------------------------------------------------------------------------
 # FUNCTION TO PRE-PROCESS NOTES
 # ---------------------------------------------------------------------------
-
 def combined_notes(disease, period=60, year_survival=5, days_sur_bounds=None,
                    authortype_list=None, idlist=None,
                    added_features_list=None):
@@ -284,11 +303,15 @@ def combined_notes(disease, period=60, year_survival=5, days_sur_bounds=None,
     if added_features_list is None:
         added_features_list = []
 
-    df_Notes = df_Notes.groupby(['id', 'overallsurvival', 'vitalstatusbinary',
-                                 'stage_grade', 'id_count']+added_features_list,
-                                as_index=False
-                                )['deid_notecontent'].apply(' '.join).reset_index()
-
+    
+    df_Notes = df_Notes.groupby(['id', 'overallsurvival','vitalstatusbinary','stage_grade','id_count']+added_features_list,
+                                )['deid_notecontent'].apply(' '.join).reset_index(drop=False, inplace=False)
+    
+    df_Notes.rename(columns={df_Notes.columns[-1]: 'text'}, inplace=True)
+    
+    # Add length.
+    df_Notes['text_length'] = df_Notes['text'].str.len()
+    
     # Computing the label.
     df_Notes['label'] = None
     df_Notes['label'] = np.where(((df_Notes['overallsurvival'] >=
@@ -305,10 +328,7 @@ def combined_notes(disease, period=60, year_survival=5, days_sur_bounds=None,
     df_Notes = df_Notes[~df_Notes['label'].isnull()].copy()
     df_Notes['label'] = df_Notes['label'].astype(int)
     df_Notes.reset_index(inplace=True, drop=True)
-    df_Notes.rename(columns={0: 'text'}, inplace=True)
-
-    # Add length.
-    df_Notes['text_length'] = df_Notes['text'].str.len()
+    
 
     # This select notes from ids that are in the list 'idlist' only.
     if idlist:
@@ -557,12 +577,13 @@ def lr_cv(disease, year_survival=5, period_of_analysis_days=None,
                                    scoring=scoring, refit='f1',
                                    cv=cross_validation)
 
-        # Clear the cache directory when you don't need it anymore.
-        rmtree(cachedir)
-
         # Fit.
         grid_search.fit(x_train, y_train)
-
+        
+        # Clear the cache directory when you don't need it anymore.
+        rmtree(cachedir)
+        
+        
         # Record cross validation metrics.
         val_f1.append((grid_search.cv_results_['mean_test_f1'][grid_search.best_index_],
                        grid_search.cv_results_['std_test_f1'][grid_search.best_index_]))
@@ -664,10 +685,12 @@ def lr_cv(disease, year_survival=5, period_of_analysis_days=None,
                                    scoring=scoring, refit='f1',
                                    cv=cross_validation)
 
-        # Clear the cache directory when you don't need it anymore.
-        rmtree(cachedir)
 
         grid_search.fit(x_train_s, y_train_s)
+        
+        # Clear the cache directory when you don't need it anymore.
+        rmtree(cachedir)
+        
         val_f1_s.append((grid_search.cv_results_['mean_test_f1'][grid_search.best_index_],
                          grid_search.cv_results_['std_test_f1'][grid_search.best_index_]))
         val_area_under_curve_s.append((grid_search.cv_results_['mean_test_auc'][grid_search.best_index_],

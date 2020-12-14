@@ -1,6 +1,6 @@
-# Experiment 2 - Machine learning
+# Demo - Machine learning
 
-This section is used to reproduce the test experiments of current Figure 5 of the manuscript.
+This section is used to run a demo experiment associated to current Figure 5 of the manuscript.
 
 ## Description
 
@@ -36,7 +36,7 @@ List of commands to install the required packages using conda:
      * Refer to the specific algorithm for details about parameter search bound.
      * For imbalanced classifications: SMOTE algorithm is automatically used to balance data in training. 
  
-2. 'Dataset' folder: contains folder for training and testing datasets. 
+2. 'Dataset' folder: contains folder for training and testing datasets. Download the "Demo_ML" data (Training_Dataset.csv and Testing_Dataset.csv) from our [OSF project](https://osf.io/ytge5/).
      * Dataset with name "Training_Dataset.csv" and "Testing_Dataset.csv" must be present to execute Random Forest, Support Vector machine, CART and LASSO algorithm.
      * "Training_Dataset_COX.csv" and "Testing_Dataset_COX.csv" must be present to execute Univariate Coxph.
      * "Training_Dataset_multi_COX.csv" and "Testing_Dataset_multi_COX.csv" must be present to execute multivariate Penalized Coxph.
