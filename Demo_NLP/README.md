@@ -1,6 +1,6 @@
 # Demo - NLP
 
-This section is used to run and test the code that produce the NLP experiments of current Figure 6 of the manuscript.
+This section is used to run a demo experiment associated to current Figure 6 of the manuscript.
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
@@ -28,7 +28,7 @@ This section details the instructions to run the demo experiment, where random t
 
 In the same folder where this file is located:
 
-1. Donwload the demo data file "df_Notes_breast.pkl" from OSF Demo_NLP folder.
+1. Donwload the demo data file "df_Notes_breast.pkl" from the "Demo_ML" folder of our [OSF project](https://osf.io/ytge5/).
 
 2. Check for the existence of the following files:
 	* ```survivalnlp.py```
@@ -47,21 +47,19 @@ In the same folder where this file is located:
 
 ## Data
 In the Demo data generated to run and test the python code of the NLP experiment:
-    * The text of each note (deid_notecontent attribute) is a concatenation of random words from the vocabulary
+  * The text of each note (deid_notecontent attribute) is a concatenation of random words from the vocabulary
       of the Brown corpus of NLTK [1]. Selections are made according to the relative weights computed from the term frequency in the corpus.
-    * None of the attribute values in the Demo data belong to real patients. Each row in the demo data contains a random text (in sustitution of a patient note) and (synthetic) attributes of the "note" and the "patient".
-      Number of rows: 451772
-      Number of Columns: 9 columns
-      # Columns Information:
-      --> 'id': Unique identifier for a patient.
-      --> 'deid_notecontent': De-identified note.
-      --> 'overallsurvival': Survival time from the date of diagnosis in years.
-      --> 'vitalstatusbinary': Vital status (0 if alive and 1 if dead).
-      --> 'authortype': Author of the note or source.
-      --> 'filingdate': Note date.
-      --> 'dateofdiagnosis': Date of diagnosis.
-      --> 'stage_grade': Stage or grade.
-      --> 'AGE': Age at diagnosis.
+  * None of the attribute values in the Demo data belong to real patients. Each row in the demo data contains random text (in substitution of a patient note) and (synthetic) fields for the "note" and "patient" attributes. Number of rows: 451772. Number of Columns: 9 columns.
+  * Columns Information:
+    * 'id': Unique identifier for a patient.
+    * 'deid_notecontent': De-identified note.
+    * 'overallsurvival': Survival time from the date of diagnosis in years.
+    * 'vitalstatusbinary': Vital status (0 if alive and 1 if dead).
+    * 'authortype': Author of the note or source.
+    * 'filingdate': Note date.
+    * 'dateofdiagnosis': Date of diagnosis.
+    * 'stage_grade': Stage or grade.
+    * 'AGE': Age at diagnosis.
 
 [1] Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.
 

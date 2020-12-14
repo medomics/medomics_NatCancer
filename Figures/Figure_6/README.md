@@ -2,13 +2,15 @@
 
 This section is used to reproduce the NLP experiments of current Figure 6 of the manuscript.
 
-Due to patient confidentiality issues, original files cannot be shared at the moment.  However, we have produced a compatible Demo example, to run and test the python code of the NLP framework that produces the results shown in Figure 6 (see the DEMO_NLP folder).
+Due to patient confidentiality issues, original files cannot be shared at the moment.  However, we have produced a compatible Demo example, to run and test the python code of the NLP framework that produces the results shown in Figure 6 (see the Demo_NLP folder of this repository).
 
-The graphical results with the real data are printed on Jupyter Notebook ```RESULTS.ipynb```.
+In this section, the graphical results with the real data are printed on Jupyter Notebook ```RESULTS.ipynb```.
+
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
 * Python 3.7.4 and above.
+
 
 ## Installing
 
@@ -26,13 +28,12 @@ List of commands to install the required packages using conda:
 * conda install -c conda-forge pytest-shutil
 
 
-
 ## Instructions
 
 This section details the instructions to run the full set of experiments using medical notes of cancer patients (processed format: Python pickle objects). 
 
 In the same folder where this file is located:
-1. Donwload from ADDRESS the following files:
+1. Donwload from our [OSF project](https://osf.io/ytge5/) the following files (currently not available due to patient confidentiality issues):
 	* df_Notes_breast.pkl
 	* df_Notes_lung.pkl
 	* df_Notes_glioma.pkl
@@ -47,7 +48,7 @@ In the same folder where this file is located:
 	* glioma30.pickle
 	* prostate60.pickle
 
-* Changing the corresponding parameters of option 1 (0 --> breast, 1 --> prostate, 2 --> lung, 3 --> glioma) and option 2 (1 --> 30 days for breast, lung, glioma; 2 --> 60 days for prostate).
+* Change the corresponding parameters of option 1 (0 --> breast, 1 --> prostate, 2 --> lung, 3 --> glioma) and option 2 (1 --> 30 days for breast, lung, glioma; 2 --> 60 days for prostate).
 
 4. Run the Jupyter Notebook ```RESULTS.ipynb``` to obtain the graphical results. After running the notebook, EPS, XLSX and PNG  files will be saved in the folders:
     * EPS_stage

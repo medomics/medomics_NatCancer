@@ -17,10 +17,9 @@ List of commands to install the required packages using conda:
 * conda install -c conda-forge matplotlib
 
 ## Instructions
-1- Create a folder with the name 'Data' in the same directory where this file is located.
-2- Download all files from OSF Figures/Supplemental_Figure_2 folder into the 'Data' folder. The collection of CSV files contains the data for obtain the graphical results with the Jupyter Notebook ```Kaplan-Meier-Supplemental-Figure2.ipynb```.
-
-3- Run the Jupyter Notebook ```Kaplan-Meier-Supplemental-Figure2.ipynb``` to obtain the graphical results.
+1. Create a folder with the name 'Data' in the same directory where this file is located.
+2. Download all files from the "Figures/Supplemental_Figure_2" folder of our [OSF project](https://osf.io/ytge5/). Place them in the 'Data' folder. The collection of CSV files contains the data for obtain the graphical results with the Jupyter Notebook ```Kaplan-Meier-Supplemental-Figure2.ipynb```.
+3. Run the Jupyter Notebook ```Kaplan-Meier-Supplemental-Figure2.ipynb``` to obtain the graphical results.
 
 ## Contributors
 
