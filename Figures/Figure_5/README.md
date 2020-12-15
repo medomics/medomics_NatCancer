@@ -1,27 +1,28 @@
-# Figure 4
+# Figure 5 and Supplemental Figure 5
 
-This section is used to reproduce the test experiments of current Figure 4 of the manuscript.
+This section is used to reproduce the graphics inserted in Figure 3 of the manuscript.
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
-* Python 3.7.4 and above.
+* R version (3.6.1) and above.
 
 ## Installing
 
-List of commands to install the required packages using conda:
+List of commands to install the required packages using conda manually:
 
-* conda install seaborn=0.11.0
-* conda install -c anaconda ipykernel
-* conda install -c conda-forge lifelines
-* conda install -c anaconda scikit-learn
-* conda install -c conda-forge matplotlib
+* conda create -n R_shared_env r-essentials r-base
+* conda activate R_shared_env
+* conda install -c russh r-survminer
+* conda install -c conda-forge r-readr
+* conda install -c r r-survival
+* conda install -c r r-proc
+
 
 ## Instructions
 
 1. Create a folder with the name 'Data' in the same directory where this file is located.
-2. Download all files from the "Figures/Figure_4" folder of our [OSF project](https://osf.io/ytge5/). Place them in the 'Data' folder. The collection of CSV files contains the data to obtain the graphical results with the Jupyter Notebook ```Kaplan-Meier-Figure4.ipynb```.
-
-3. Run the Jupyter Notebook ```Kaplan-Meier-Figure4.ipynb``` to obtain the graphical results.
+2. Download all files from the "Figures/Figure_5" folder of our [OSF project](https://osf.io/ytge5/). Place them in the 'Data' folder.The collection of CSV files contains the data to obtain the graphical results with the R ```Figure_5_plot.R```.
+3. Run the R ```Figure_5_plot.R``` to obtain the graphical results.
 
 ## Contributors
 

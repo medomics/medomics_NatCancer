@@ -3,7 +3,8 @@
 DESCRIPTION:
 
 This script is used to reproduce the NLP experiments of the following paper:
-"MEDomics: Towards Self-Cognizant Hospitals in the Treatment of Cancer"
+"MEDomics: Towards a Continuously Learning Health System for the Treatment
+of Cancer"
 
 Results are saved in a pickle object with the following name:
   --> {disease}{starting point}.pickle  (Ex: breast30.pickle),

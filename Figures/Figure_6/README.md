@@ -38,10 +38,12 @@ In the same folder where this file is located:
 	* df_Notes_lung.pkl
 	* df_Notes_glioma.pkl
 	* df_Notes_prostate.pkl
+  
 2. Check for the existence of the following files:
 	* ```survivalnlp.py```
 	* ```timeseriesnlp.py```
 	* ```RESULTS.ipynb```
+  
 3. For each type of cancer 'breast', 'prostate', 'lung', 'glioma'; properly configure(*) the ```timeseriesnlp.py``` script and run it independently for each configuration. Configuration instructions are provided in the script. When the different configurations of the ```timeseriesnlp.py``` script have been completed successfully, check for the existence of the following files:
 	* breast30.pickle
 	* lung30.pickle
