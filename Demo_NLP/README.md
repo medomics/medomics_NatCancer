@@ -89,8 +89,4 @@ Thanks to the following people who have contributed to this section:
      GNU General Public License for more details.
  
      You should have received a copy of the GNU General Public License
-<<<<<<< HEAD
      along with this package.  If not, see <http://www.gnu.org/licenses/>.
-=======
-     along with this package.  If not, see <http://www.gnu.org/licenses/>.
->>>>>>> master

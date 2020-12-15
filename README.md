@@ -10,7 +10,7 @@ This repository provides the framework to reproduce the main learning experiment
 This repository is subdivided into three main high-level experiments:
 * Figures: section used to illustrate the components of current Figures of the manuscript. 
 * Demo_ML: section used to reproduce the test experiments of current Figure 5 of the manuscript.
-* Demo_NLP: section used to reproduce the test experiments of current Figure 6 of the manuscript.
+* Demo_NLP: section used to test the python code that produces the experiments of current Figure 6 of the manuscript.
 
 Please follow the instructions in the README file of each section. 
 
