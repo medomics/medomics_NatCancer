@@ -28,7 +28,7 @@ This section details the instructions to run the demo experiment, where random t
 
 In the same folder where this file is located:
 
-1. Donwload the demo data file "df_Notes_breast.pkl" from the "Demo_ML" folder of our [OSF project](https://osf.io/ytge5/).
+1. Download the demo data file "df_Notes_breast.pkl" from the "Demo_NLP" folder of our [OSF project](https://osf.io/ytge5/).
 
 2. Check for the existence of the following files:
 	* ```survivalnlp.py```
