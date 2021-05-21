@@ -46,7 +46,7 @@ In the same folder where this file is located:
     
 
 ## Data
-In the Demo data generated to run and test the python code of the NLP experiment:
+In the Demo-data generated to run and test the python code of the NLP experiment:
   * The text of each note (deid_notecontent attribute) is a concatenation of random words from the vocabulary
       of the Brown corpus of NLTK [1]. Selections are made according to the relative weights computed from the term frequency in the corpus.
   * None of the attribute values in the Demo data belong to real patients. Each row in the demo data contains random text (in substitution of a patient note) and (synthetic) fields for the "note" and "patient" attributes. Number of rows: 451772. Number of Columns: 9 columns.
