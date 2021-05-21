@@ -2,9 +2,7 @@
 *****************************************************************************
 DESCRIPTION:
 
-Functions used to perform the NLP experiments of the following paper:
-"MEDomics: Towards a Continuously Learning Health System for the Treatment
-of Cancer"
+Functions used to perform the NLP experiments of the paper.
 -----------------------------------------------------------------------------
 AUTHORS: 
 

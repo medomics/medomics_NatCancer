@@ -1,6 +1,6 @@
-# Figure 5 and Supplemental Figure 5
+# Figure 5
 
-This section is used to reproduce the graphics inserted in Figure 3 of the manuscript.
+This section is used to reproduce the graphics inserted in Figure 5 of the manuscript.
 
 ## Prerequisites
 * MAC or Linux operating systems (tested on CentOS Linux release 7.6.1810).
